@@ -9,6 +9,11 @@ import android.widget.TextView;
 import com.kevin.delegationadapter.AdapterDelegate;
 
 public class CompanyAdapterDelegate extends AdapterDelegate<String, CompanyAdapterDelegate.ViewHolder> {
+    private  OnItemClieck mOnItemClieck;
+
+    public void setmOnItemClieck(OnItemClieck mOnItemClieck) {
+        this.mOnItemClieck = mOnItemClieck;
+    }
 
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent) {
@@ -20,6 +25,14 @@ public class CompanyAdapterDelegate extends AdapterDelegate<String, CompanyAdapt
     @Override
     public void onBindViewHolder(final ViewHolder holder, final int position, final String item) {
         holder.tvName.setText(item);
+        holder.tvName.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(mOnItemClieck!=null) {
+                    mOnItemClieck.Clieck(position);
+                }
+            }
+        });
     }
 
     static class ViewHolder extends RecyclerView.ViewHolder {
@@ -29,5 +42,10 @@ public class CompanyAdapterDelegate extends AdapterDelegate<String, CompanyAdapt
             super(itemView);
             tvName = itemView.findViewById(android.R.id.text1);
         }
+    }
+
+
+    public  interface  OnItemClieck{
+        void  Clieck(int postion);
     }
 }
