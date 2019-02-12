@@ -11,6 +11,7 @@ import com.cfr.demo.android.adapter.CNCompanyAdapterDelegate;
 import com.cfr.demo.android.adapter.CompanyAdapterDelegate;
 import com.cfr.demo.android.adapter.USCompanyAdapterDelegate;
 import com.cfr.demo.android.delegationadapter.delegationadapterActivity;
+import com.cfr.demo.android.kotlin.KotlinActivity;
 import com.kevin.delegationadapter.DelegationAdapter;
 
 import java.util.ArrayList;
@@ -41,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
 
         List<String> companies = new ArrayList<>();
         companies.add("delegationadapter");
+        companies.add("kotlin");
         // ⑤ 设置数据
         delegationAdapter.setDataItems(companies);
         mCompanyAdapterDelegate.setmOnItemClieck(new CompanyAdapterDelegate.OnItemClieck() {
@@ -50,6 +52,10 @@ public class MainActivity extends AppCompatActivity {
                 switch (postion){
                     case 0:
                         intent.setClass(MainActivity.this, delegationadapterActivity.class);
+                        startActivity(intent);
+                        break;
+                    case 1:
+                        intent.setClass(MainActivity.this, KotlinActivity.class);
                         startActivity(intent);
                         break;
 
