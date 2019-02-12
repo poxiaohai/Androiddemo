@@ -4,6 +4,7 @@
     package="com.cfr.demo.android">
 
     <application
+        android:name=".MyApplication"
         android:allowBackup="true"
         android:appComponentFactory="aa"
         android:icon="@mipmap/ic_launcher"

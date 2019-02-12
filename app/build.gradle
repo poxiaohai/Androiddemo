@@ -61,7 +61,7 @@ dependencies {
     implementation 'com.squareup.okhttp3:logging-interceptor:3.11.0'
 //模糊透明 View
     implementation 'com.github.mmin18:realtimeblurview:1.1.0'
-
+    implementation 'com.classic.common:multiple-status-view:1.5.1'
     //Logger
     implementation 'com.orhanobut:logger:2.1.1'
     //leakCanary 内存泄漏自检
