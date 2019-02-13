@@ -2,9 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.cfr.demo.android">
-
+    <uses-permission android:name="android.permission.INTERNET"/>
     <application
-        android:name=".MyApplication"
         android:allowBackup="true"
         android:appComponentFactory="aa"
         android:icon="@mipmap/ic_launcher"
@@ -21,7 +20,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".delegationadapter.delegationadapterActivity" />
-        <activity android:name=".kotlin.KotlinActivity"></activity>
+        <activity android:name=".kotlin.kotlinActivity" />
+        <activity android:name=".kotlin.kotlinMainActivity"></activity>
     </application>
 
 </manifest>

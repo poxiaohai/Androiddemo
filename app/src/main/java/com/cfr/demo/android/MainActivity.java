@@ -3,15 +3,11 @@ package com.cfr.demo.android;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-
-import com.cfr.demo.android.adapter.CNCompanyAdapterDelegate;
 import com.cfr.demo.android.adapter.CompanyAdapterDelegate;
-import com.cfr.demo.android.adapter.USCompanyAdapterDelegate;
 import com.cfr.demo.android.delegationadapter.delegationadapterActivity;
-import com.cfr.demo.android.kotlin.KotlinActivity;
+import com.cfr.demo.android.kotlin.kotlinActivity;
 import com.kevin.delegationadapter.DelegationAdapter;
 
 import java.util.ArrayList;
@@ -55,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
                         startActivity(intent);
                         break;
                     case 1:
-                        intent.setClass(MainActivity.this, KotlinActivity.class);
+                        intent.setClass(MainActivity.this, kotlinActivity.class);
                         startActivity(intent);
                         break;
 
