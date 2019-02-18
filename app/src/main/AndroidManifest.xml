@@ -2,7 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.cfr.demo.android">
-    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:appComponentFactory="aa"
@@ -21,7 +23,9 @@
         </activity>
         <activity android:name=".delegationadapter.delegationadapterActivity" />
         <activity android:name=".kotlin.kotlinActivity" />
-        <activity android:name=".kotlin.kotlinMainActivity"></activity>
+        <activity android:name=".kotlin.kotlinMainActivity" />
+        <activity android:name=".other.otherActivity" />
+        <activity android:name=".Shadow.ShadowActivity"></activity>
     </application>
 
 </manifest>

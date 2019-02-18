@@ -5,9 +5,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+
+import com.cfr.demo.android.Shadow.ShadowActivity;
 import com.cfr.demo.android.adapter.CompanyAdapterDelegate;
 import com.cfr.demo.android.delegationadapter.delegationadapterActivity;
 import com.cfr.demo.android.kotlin.kotlinActivity;
+import com.cfr.demo.android.other.otherActivity;
 import com.kevin.delegationadapter.DelegationAdapter;
 
 import java.util.ArrayList;
@@ -39,6 +42,8 @@ public class MainActivity extends AppCompatActivity {
         List<String> companies = new ArrayList<>();
         companies.add("delegationadapter");
         companies.add("kotlin");
+        companies.add("otherTextview");
+        companies.add("阴影效果");
         // ⑤ 设置数据
         delegationAdapter.setDataItems(companies);
         mCompanyAdapterDelegate.setmOnItemClieck(new CompanyAdapterDelegate.OnItemClieck() {
@@ -52,6 +57,14 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case 1:
                         intent.setClass(MainActivity.this, kotlinActivity.class);
+                        startActivity(intent);
+                        break;
+                    case 2:
+                        intent.setClass(MainActivity.this, otherActivity.class);
+                        startActivity(intent);
+                        break;
+                    case 3:
+                        intent.setClass(MainActivity.this, ShadowActivity.class);
                         startActivity(intent);
                         break;
 
