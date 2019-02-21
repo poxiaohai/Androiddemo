@@ -4,6 +4,8 @@
     package="com.cfr.demo.android">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -25,7 +27,16 @@
         <activity android:name=".kotlin.kotlinActivity" />
         <activity android:name=".kotlin.kotlinMainActivity" />
         <activity android:name=".other.otherActivity" />
-        <activity android:name=".Shadow.ShadowActivity"></activity>
+        <activity android:name=".Shadow.ShadowActivity" />
+        <activity android:name=".Image.ImageActivity"></activity>
+        <activity
+            android:name="cn.finalteam.rxgalleryfinal.ui.activity.MediaActivity"
+            android:exported="true"
+            android:theme="@style/Theme_Light.Test" />
+
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>

@@ -44,4 +44,6 @@ dependencies {
     implementation 'org.jetbrains.anko:anko:0.10.5'
 
     implementation 'com.github.zhengcx:ShadowHelper:v1.0'
+    implementation 'cn.finalteam.rxgalleryfinal:library:1.0.9'
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
 }
