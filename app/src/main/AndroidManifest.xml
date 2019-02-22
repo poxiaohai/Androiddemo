@@ -29,15 +29,15 @@
         <activity android:name=".kotlin.kotlinMainActivity" />
         <activity android:name=".other.otherActivity" />
         <activity android:name=".Shadow.ShadowActivity" />
-        <activity android:name=".Image.ImageActivity"></activity>
+        <activity android:name=".Image.ImageActivity" />
         <activity
             android:name="cn.finalteam.rxgalleryfinal.ui.activity.MediaActivity"
             android:exported="true"
             android:theme="@style/Theme_Light.Test" />
-
         <activity
             android:name="com.yalantis.ucrop.UCropActivity"
             android:screenOrientation="portrait" />
+        <activity android:name=".Image.RxImagerActivity"></activity>
     </application>
 
 </manifest>

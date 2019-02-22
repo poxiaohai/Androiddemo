@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Image.RxImagerActivity">
+    <TextView
+        android:id="@+id/mTvPhotograph"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="拍照"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:background="#ed6262"/>
+
+    <TextView
+        android:id="@+id/video"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Open 视频"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/mTvPhotograph"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:background="#ed62"/>
+
+    <TextView
+        android:id="@+id/Tailoring"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ed6262"
+        android:gravity="center"
+        android:text="裁剪"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/video" />
+
+
+</android.support.constraint.ConstraintLayout>

@@ -8,6 +8,7 @@ import android.support.v7.widget.RecyclerView;
 import android.widget.ImageView;
 
 import com.cfr.demo.android.Image.ImageActivity;
+import com.cfr.demo.android.Image.RxImagerActivity;
 import com.cfr.demo.android.Shadow.ShadowActivity;
 import com.cfr.demo.android.adapter.CompanyAdapterDelegate;
 import com.cfr.demo.android.delegationadapter.delegationadapterActivity;
@@ -47,6 +48,7 @@ public class MainActivity extends AppCompatActivity {
         companies.add("otherTextview");
         companies.add("阴影效果");
         companies.add("上传图片");
+        companies.add("rxgalleryfinalDemo");
         // ⑤ 设置数据
         delegationAdapter.setDataItems(companies);
         mCompanyAdapterDelegate.setmOnItemClieck(new CompanyAdapterDelegate.OnItemClieck() {
@@ -72,6 +74,10 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case 4:
                         intent.setClass(MainActivity.this, ImageActivity.class);
+                        startActivity(intent);
+                        break;
+                    case 5:
+                        intent.setClass(MainActivity.this, RxImagerActivity.class);
                         startActivity(intent);
                         break;
 
