@@ -37,7 +37,8 @@
         <activity
             android:name="com.yalantis.ucrop.UCropActivity"
             android:screenOrientation="portrait" />
-        <activity android:name=".Image.RxImagerActivity"></activity>
+        <activity android:name=".Image.RxImagerActivity" />
+        <activity android:name=".RecyclerView.RecyclerViewActivity"></activity>
     </application>
 
 </manifest>
