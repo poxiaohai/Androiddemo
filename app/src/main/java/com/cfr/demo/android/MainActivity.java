@@ -1,12 +1,11 @@
 package com.cfr.demo.android;
 
+import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.widget.ImageView;
-
 import com.cfr.demo.android.Image.ImageActivity;
 import com.cfr.demo.android.Image.RxImagerActivity;
 import com.cfr.demo.android.RecyclerView.RecyclerViewActivity;
@@ -16,7 +15,6 @@ import com.cfr.demo.android.delegationadapter.delegationadapterActivity;
 import com.cfr.demo.android.kotlin.kotlinActivity;
 import com.cfr.demo.android.other.otherActivity;
 import com.kevin.delegationadapter.DelegationAdapter;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -50,8 +48,10 @@ public class MainActivity extends AppCompatActivity {
         companies.add("阴影效果");
         companies.add("上传图片");
         companies.add("rxgalleryfinalDemo");
-
         companies.add("RecyclerView");
+        companies.add("通知栏管理");
+
+
         // ⑤ 设置数据
         delegationAdapter.setDataItems(companies);
         mCompanyAdapterDelegate.setmOnItemClieck(new CompanyAdapterDelegate.OnItemClieck() {
@@ -87,12 +87,16 @@ public class MainActivity extends AppCompatActivity {
                         intent.setClass(MainActivity.this, RecyclerViewActivity.class);
                         startActivity(intent);
                         break;
+                    case 7:
+                        intent.setClass(MainActivity.this, NotificationActivity.class);
+                        startActivity(intent);
+                        break;
+
 
                 }
             }
         });
-
-
-
     }
+
+
 }
