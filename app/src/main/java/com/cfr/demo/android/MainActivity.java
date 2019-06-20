@@ -1,6 +1,4 @@
 package com.cfr.demo.android;
-
-import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -13,6 +11,7 @@ import com.cfr.demo.android.Shadow.ShadowActivity;
 import com.cfr.demo.android.adapter.CompanyAdapterDelegate;
 import com.cfr.demo.android.delegationadapter.delegationadapterActivity;
 import com.cfr.demo.android.kotlin.kotlinActivity;
+import com.cfr.demo.android.other.CityActivity;
 import com.cfr.demo.android.other.otherActivity;
 import com.kevin.delegationadapter.DelegationAdapter;
 import java.util.ArrayList;
@@ -50,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
         companies.add("rxgalleryfinalDemo");
         companies.add("RecyclerView");
         companies.add("通知栏管理");
+        companies.add("省市区三级联动");
 
 
         // ⑤ 设置数据
@@ -89,6 +89,10 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case 7:
                         intent.setClass(MainActivity.this, NotificationActivity.class);
+                        startActivity(intent);
+                        break;
+                    case 8:
+                        intent.setClass(MainActivity.this, CityActivity.class);
                         startActivity(intent);
                         break;
 

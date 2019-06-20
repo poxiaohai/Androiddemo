@@ -39,7 +39,8 @@
             android:screenOrientation="portrait" />
         <activity android:name=".Image.RxImagerActivity" />
         <activity android:name=".RecyclerView.RecyclerViewActivity" />
-        <activity android:name=".NotificationActivity"></activity>
+        <activity android:name=".NotificationActivity" />
+        <activity android:name=".other.CityActivity"></activity>
     </application>
 
 </manifest>
