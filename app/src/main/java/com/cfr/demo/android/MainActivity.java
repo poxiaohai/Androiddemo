@@ -8,6 +8,7 @@ import com.cfr.demo.android.Image.ImageActivity;
 import com.cfr.demo.android.Image.RxImagerActivity;
 import com.cfr.demo.android.RecyclerView.RecyclerViewActivity;
 import com.cfr.demo.android.Shadow.ShadowActivity;
+import com.cfr.demo.android.Theard.ThreadActivity;
 import com.cfr.demo.android.adapter.CompanyAdapterDelegate;
 import com.cfr.demo.android.delegationadapter.delegationadapterActivity;
 import com.cfr.demo.android.kotlin.kotlinActivity;
@@ -50,6 +51,7 @@ public class MainActivity extends AppCompatActivity {
         companies.add("RecyclerView");
         companies.add("通知栏管理");
         companies.add("省市区三级联动");
+        companies.add("线程通信");
 
 
         // ⑤ 设置数据
@@ -93,6 +95,10 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case 8:
                         intent.setClass(MainActivity.this, CityActivity.class);
+                        startActivity(intent);
+                        break;
+                    case 9:
+                        intent.setClass(MainActivity.this, ThreadActivity.class);
                         startActivity(intent);
                         break;
 

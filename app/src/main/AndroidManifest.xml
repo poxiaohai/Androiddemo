@@ -40,7 +40,8 @@
         <activity android:name=".Image.RxImagerActivity" />
         <activity android:name=".RecyclerView.RecyclerViewActivity" />
         <activity android:name=".NotificationActivity" />
-        <activity android:name=".other.CityActivity"></activity>
+        <activity android:name=".other.CityActivity" />
+        <activity android:name=".Theard.ThreadActivity"></activity>
     </application>
 
 </manifest>

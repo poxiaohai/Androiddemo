@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Theard.ThreadActivity">
+    <TextView
+        android:id="@+id/mbtn1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="子线程向主线程通信"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="#ed6262"/>
+
+    <TextView
+        android:id="@+id/mbtn2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mbtn1"
+        android:text="主线程向子线程通信"
+        android:gravity="center"
+        android:background="#ed62"/>
+
+    <TextView
+        android:id="@+id/mBtn3"
+        app:layout_constraintTop_toBottomOf="@id/mbtn2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="#ed6262"
+        android:text="子线程向子线程通信"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        />
+
+
+</android.support.constraint.ConstraintLayout>
